@@ -120,6 +120,17 @@ class Ui_MainWindow(object):
         self.actionSelectAll.setShortcut(_translate("MainWindow", "Ctrl+A"))
         #cut Text
         self.actionCut.triggered.connect(self.showText.cut)
+        #copy Text
+        self.actionCopy.triggered.connect(self.showText.copy)
+        #undo
+        self.actionUndo.triggered.connect(self.showText.undo)
+        #redo
+        self.actionRedo.triggered.connect(self.showText.redo)
+        #selectAllText
+        self.actionSelectAll.triggered.connect(self.showText.selectAll)
+        #paste Text
+        self.actionPaste.triggered.connect(self.showText.paste)
+        
 
 if __name__ == "__main__":
     import sys
