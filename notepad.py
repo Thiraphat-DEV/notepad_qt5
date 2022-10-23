@@ -171,7 +171,7 @@ class Ui_MainWindow(object):
                     #show text
                     self.showText.setPlainText(text_of_file)
                     #except file of null
-            except NullWriter as e:
+            except Exception as e:
                 print(e)
 
 if __name__ == "__main__":
